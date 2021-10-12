@@ -1,3 +1,9 @@
+# Projeto Antigo
+Esse projeto foi idealizado para mostrar à um estudante um exemplo de como faria um contador de visitas.
+Esse projeto segue pouca (ou nenhuma) boa prática básica.
+É funcional, porém caso pense em usar em um projeto, sugiro algumas mudanças.
+
+----
 
 # Contatador_de_Visitas_Simples
 Contador de visitas simples em PHP
@@ -12,9 +18,9 @@ Contador de visitas simples em PHP
  -  **Para zerar o contador:** abra o ao final da URL o caminho **/?limpar**
  Ex: **http://localhost/contatador/?limpar**;
 
-- **Para mudar o texto:** abra o ao final da URL o caminho **/?texto=Texto que quero** 
+- **Para mudar o texto:** abra o ao final da URL o caminho **/?texto=Texto que quero**
 Ex: **http://localhost/contatador/?texto=PessoasOnline** (altere a frase **"Pessoas Online"** pela que desejar);
-- **Mudar o valor do contador:** abra o ao final da URL o caminho **/?valor=126** 
+- **Mudar o valor do contador:** abra o ao final da URL o caminho **/?valor=126**
  Ex: **http://localhost/contatador/?valor=126** altere o numero **126** pelo (número) que desejar;
 
 ---------
