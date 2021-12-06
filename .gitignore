@@ -1,1 +1,4 @@
 *.ctr
+.mdb
+.env
+.log
