@@ -1,6 +1,6 @@
 <?php
 
-$redirect_to = './counter.php';
+$redirect_to = '../counter.php';
 
 // header("Location {$redirect_to}");
 ?>

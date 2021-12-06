@@ -1,5 +1,5 @@
 # Projeto Antigo
-Esse projeto foi idealizado para mostrar à um estudante um exemplo de como faria um contador de visitas.
+Esse projeto foi idealizado para mostrar à um estudante um exemplo de um contador de visitas.
 Esse projeto segue pouca (ou nenhuma) boa prática básica.
 É funcional, porém caso pense em usar em um projeto, sugiro algumas mudanças.
 
@@ -8,20 +8,18 @@ Esse projeto segue pouca (ou nenhuma) boa prática básica.
 # Contatador_de_Visitas_Simples
 Contador de visitas simples em PHP
 
-# Como Usar:
-1-Extraia o conteúdo para uma sub-pasta;
-2-Dê as permissões **777** ao arquivo **contador.ctr**;
-3-Acesse no navegador o caminho onde extraiu o conteúdo, ex: **http://localhost/contatador/**;
+---------
 
-### Alterações Opcionais:
+# How to use:
+1 - Extract or clone this project in your page;
+2 - Give the `777` permission to `counters` dir;
+3 - Open this project path in your browser;
 
- -  **Para zerar o contador:** abra o ao final da URL o caminho **/?limpar**
- Ex: **http://localhost/contatador/?limpar**;
+---------
 
-- **Para mudar o texto:** abra o ao final da URL o caminho **/?texto=Texto que quero**
-Ex: **http://localhost/contatador/?texto=PessoasOnline** (altere a frase **"Pessoas Online"** pela que desejar);
-- **Mudar o valor do contador:** abra o ao final da URL o caminho **/?valor=126**
- Ex: **http://localhost/contatador/?valor=126** altere o numero **126** pelo (número) que desejar;
+### Thanks:
+
+- The `pociot` theme is inspired in `https://pociot.dev/counter` from https://github.com/mpociot
 
 ---------
 ## DONE
@@ -29,10 +27,11 @@ Ex: **http://localhost/contatador/?texto=PessoasOnline** (altere a frase **"Pess
 
 - [x] Zerar contador
 - [x] Mudar texto
+- [X] Temas
 ---------
 ## TO DO
 ###
 
-- [ ] Temas
+- [ ] Generator page
 - [ ] APIs
 - [ ] Múltiplos contadores
