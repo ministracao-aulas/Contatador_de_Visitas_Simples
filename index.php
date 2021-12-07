@@ -1,6 +1,8 @@
 <?php
-$themes = require __DIR__ . '/themes.php';
-$page_title = "A visitor simple counter";
+require_once __DIR__ . '/functions.php';
+
+$themes     = require __DIR__ . '/themes.php';
+$page_title = "A basic visitor simple counter";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -51,25 +53,25 @@ $page_title = "A visitor simple counter";
 </head>
 
 <body>
-    <div class="row g-3 m-5 d-flex justify-content-center">
-        <div class="col-12">
+    <div class="row g-3 m-3 mx-4">
+        <div class="col-12 d-flex justify-content-center">
             <div class="bg-light p-5 rounded mt-3">
                 <h1><?= $page_title ?></h1>
                 <p class="lead">This is a example of counter:</p>
-                <div class="mb-4">
-                    <img src="./counter.php?counter_name=My+first+counter&label=Visitors&label_color=%23000000&count_color=%23000000&url=http://tiagofranca.com%23link&template=custom&color_1=%230af55c&color_1_opacity=0.5&color_2=%232e9b2c&color_2_opacity=0.5&radius=5"
-                        class="img-fluid" alt="Visitor count" id="preview_image">
+                <div class="mb-2">
+                    <img src="<?= getBaseHost() ?>/counter.php?counter_name=My+first+counter&label=Visitors&label_color=%23000000&count_color=%23000000&url=http://tiagofranca.com%23link&template=custom&color_1=%230af55c&color_1_opacity=0.5&color_2=%232e9b2c&color_2_opacity=0.5&radius=5" class="img-fluid" alt="Visitor count" id="preview_image">
 
-                    <img src="./counter.php?counter_name=My+first+counter&label=My label 2&label_color=%23000000&count_color=%23000000&url=http://tiagofranca.com%23link&template=custom&radius=5"
-                        class="img-fluid" alt="Visitor count" id="preview_image">
+                    <img src="<?= getBaseHost() ?>/counter.php?counter_name=My+first+counter&label=My label 2&label_color=%23000000&count_color=%23000000&url=http://tiagofranca.com%23link&template=custom&radius=5" class="img-fluid" alt="Visitor count" id="preview_image">
                 </div>
 
-                <div class="mb-4">
-                    <a class="btn btn-lg btn-primary" href="./generator.php" role="button">Create your counter »</a>
+                <div class="">
+                    <a class="btn btn-lg btn-primary" href="<?= getBaseHost() ?>/generator.php" role="button">Create your counter »</a>
                 </div>
 
             </div>
         </div>
+
+        <?php require_once __DIR__ . '/views/footer.php'; ?>
     </div>
 </body>
 

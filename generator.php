@@ -2,7 +2,7 @@
 require_once __DIR__ . '/functions.php';
 
 $themes     = require __DIR__.'/themes.php';
-$page_title = "Generate a counter";
+$page_title = "A basic visitor simple counter";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -56,7 +56,9 @@ $page_title = "Generate a counter";
     <div class="row g-3 m-5">
 
         <div class="col-12">
-            <h4><?= $page_title ?></h4>
+            <a href="<?= getBaseHost() ?>/index.php">
+                <h4 class="text-dark"><?= $page_title ?></h4>
+            </a>
         </div>
 
         <div class="col-8">
@@ -191,6 +193,9 @@ $page_title = "Generate a counter";
                         </div>
                     </div>
                 </div>
+
+                <hr class="my-4">
+                <?php require_once __DIR__ . '/views/footer.php'; ?>
             </div>
         </div>
 

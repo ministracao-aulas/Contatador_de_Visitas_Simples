@@ -91,6 +91,7 @@ if($count ?? null)
         '##COLOR_2_OPACITY##'   => $color_2_opacity,
         '##LABEL_COLOR##'       => $label_color,
         '##COUNT_COLOR##'       => $count_color,
+        '##COUNTER_HOME_PAGE##' => getBaseHost(),
     ];
     // die(var_dump($replaces));
     header( 'Content-type: image/svg+xml' );

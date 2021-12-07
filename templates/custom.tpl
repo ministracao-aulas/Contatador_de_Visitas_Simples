@@ -13,7 +13,10 @@
     </g>
     <g fill="##LABEL_COLOR##" text-anchor="start" font-family="Verdana,Geneva,DejaVu Sans,sans-serif"
         text-rendering="geometricPrecision" font-size="180">
-        <text x="50" y="250" transform="scale(.1)"  lengthAdjust="spacing">##LABEL##</text>
+
+        <a href="##COUNTER_HOME_PAGE##" target="__blank">
+            <text x="50" y="250" transform="scale(.1)"  lengthAdjust="spacing">##LABEL##</text>
+        </a>
     </g>
     <g fill="##COUNT_COLOR##" text-anchor="end" font-family="Verdana,Geneva,DejaVu Sans,sans-serif"
         text-rendering="geometricPrecision" font-size="180">
