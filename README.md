@@ -1,3 +1,7 @@
+# ALERT
+> ### Don't use THIS project!
+> ### This is an example project of a way to make a procedural counter, so I'll create an object-oriented project that follows at least some PSR
+
 # Projeto Antigo
 Esse projeto foi idealizado para mostrar à um estudante um exemplo de um contador de visitas.
 Esse projeto segue pouca (ou nenhuma) boa prática básica.
