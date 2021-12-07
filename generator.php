@@ -1,5 +1,7 @@
 <?php
-$themes = require __DIR__.'/themes.php';
+require_once __DIR__ . '/functions.php';
+
+$themes     = require __DIR__.'/themes.php';
 $page_title = "Generate a counter";
 ?>
 <!DOCTYPE html>
@@ -161,7 +163,7 @@ $page_title = "Generate a counter";
             <button type="button" class="btn btn-primary mx-5" id="preview_counter"
                 onclick="previewCounter()">Preview</button>
             <a href="#link" target="_blank" title="Open image link" id="preview_image_link">
-                <img src="./counter.php?template=custom" class="img-fluid" alt="Visitor count" id="preview_image">
+                <img src="<?=getBaseHost()?>/counter.php?template=custom" class="img-fluid" alt="Visitor count" id="preview_image">
             </a>
         </div>
 
@@ -264,7 +266,7 @@ $page_title = "Generate a counter";
                 radius:             inputs.radius.value
             };
 
-            var new_url = "./counter.php?" + serialize(_query);
+            var new_url = "<?=getBaseHost()?>/counter.php?" + serialize(_query);
 
             document.getElementById('preview_image_link').href = new_url;
             document.getElementById('preview_image').src = new_url;
@@ -302,7 +304,7 @@ $page_title = "Generate a counter";
             url_validation.removeAttribute('show');
             url_validation.innerHTML = '';
 
-            var new_url = "./counter.php?" + serialize(_query);
+            var new_url = "<?=getBaseHost()?>/counter.php?" + serialize(_query);
 
             window.generated_url = new_url;
 

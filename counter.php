@@ -1,21 +1,11 @@
 <?php
 declare(strict_types=1);
 
+require_once __DIR__ . '/functions.php';
+
 if (!isset($_SESSION))
 {
     session_start();
-}
-
-//Contador de visitas simples
-//A basic visitor count
-
-function getCounterName(string $input)
-{
-    $nome = strlen($input) > 5 ? $input : '_DEFAULT_COUNTER_';
-    $nome = strtolower(str_replace(['https://', 'http://'], '', $nome));
-    $nome = implode('-', parse_url($nome));
-    $nome = 'counter_'.strtolower(str_replace(['https-', 'http-', '/', '--', '=', ' ', '#'], '-', $nome));
-    return $nome;
 }
 
 $url = $_GET['url'] ?? '';
@@ -88,8 +78,6 @@ $color_2_opacity    = $_GET['color_2_opacity'] ?? $theme['color_2_opacity'];
 $text_color         = $_GET['text_color']      ?? $theme['text_color'];
 $label_color        = $_GET['label_color']     ?? $theme['label_color'];
 $count_color        = $_GET['count_color']     ?? $theme['count_color'];
-
-// die(var_dump($_GET));
 
 if($count ?? null)
 {
