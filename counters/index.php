@@ -11,7 +11,7 @@ $redirect_to = '../counter.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="refresh" content="0;url=<?= $redirect_to ?>">
-    <title>Counter</title>
+    <label>Counter</label>
 </head>
 <body>
 <script type="text/javascript">

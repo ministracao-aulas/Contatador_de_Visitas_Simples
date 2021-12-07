@@ -1,4 +1,3 @@
-
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
     width="200" height="40"
     style="border-radius: ##RADIUS##px;" >
@@ -12,9 +11,9 @@
     <g clip-path="url(#r)">
         <rect width="200" height="40" fill="url(#s)"/>
     </g>
-    <g fill="##TITLE_COLOR##" text-anchor="start" font-family="Verdana,Geneva,DejaVu Sans,sans-serif"
+    <g fill="##LABEL_COLOR##" text-anchor="start" font-family="Verdana,Geneva,DejaVu Sans,sans-serif"
         text-rendering="geometricPrecision" font-size="180">
-        <text x="50" y="250" transform="scale(.1)"  lengthAdjust="spacing">##TITLE##</text>
+        <text x="50" y="250" transform="scale(.1)"  lengthAdjust="spacing">##LABEL##</text>
     </g>
     <g fill="##COUNT_COLOR##" text-anchor="end" font-family="Verdana,Geneva,DejaVu Sans,sans-serif"
         text-rendering="geometricPrecision" font-size="180">

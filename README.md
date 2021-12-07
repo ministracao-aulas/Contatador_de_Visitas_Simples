@@ -25,13 +25,13 @@ Contador de visitas simples em PHP
 ## DONE
 ###
 
-- [x] Zerar contador
-- [x] Mudar texto
-- [X] Temas
+- [x] Set start value on counter (only on generation)
+- [x] Change label
+- [X] Theming
+- [X] Generator page
 ---------
 ## TO DO
 ###
 
-- [ ] Generator page
-- [ ] APIs
-- [ ] Múltiplos contadores
+- [ ] API
+- [ ] Allow reset/set counter value - Via API
